@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  background: linear-gradient(
+    81deg,
+    rgba(241, 250, 255, 0.7) 9.01%,
+    rgba(232, 241, 255, 0.329) 89.11%
+  );
+  justify-content: space-between; /* Ensure sections are close yet evenly spaced */
+  align-items: center;
+  padding: 40px;
+  gap: 2rem; /* Control the gap between sections */
+}
+
+.textSection {
+  flex: 1;
+  padding: 0px 100px; /* Add horizontal padding to the text section */
+}
+.headerHero {
+  display: flex;
+ 
+  gap: 4px;
+  padding: 16px;
+}
+.headerHeroPara {
+
+  color: #1bb4fb;
+}
+.heroImage1 {
+  width: 28px;
+  height: 25px;
+  margin-left:-15px
+}
+.textSection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.borderFlex{
+  display: flex;
+  padding: 0px 10px;
+  gap: 6px;
+}
+.feature {
+  margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  color: #555;
+  padding-left:28px;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 100px; /* Add horizontal padding to the image section */
+}
+
+.imageSection img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    text-align: center;
+    gap: 1.5rem; /* Reduce spacing between sections */
+    padding: 20px; /* Adjust overall padding for mobile */
+  }
+
+  .textSection {
+    padding: 0 10px; /* Minimize padding for mobile */
+  }
+
+  .headerHero {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .headerHeroPara {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .heroImage1 {
+    width: 24px; /* Slightly reduce icon size */
+    height: 24px;
+    margin-left: 0; /* Remove negative margin for alignment */
+  }
+
+  .textSection h2 {
+    font-size: 1.5rem; /* Adjust heading font size */
+    line-height: 1.4; /* Improve readability */
+    margin-bottom: 1rem;
+  }
+
+  .borderFlex {
+    flex-direction: column; /* Stack border and text vertically */
+    align-items: center; /* Center-align the content */
+    gap: 8px;
+  }
+
+  .feature h3 {
+    font-size: 1.15rem; /* Slightly reduce font size */
+    margin-bottom: 0.25rem;
+  }
+
+  .feature p {
+    font-size: 0.9rem; /* Reduce font size for text */
+    padding-left: 0; /* Remove unnecessary padding */
+  }
+
+  .imageSection {
+    padding: 0; /* Remove horizontal padding */
+  }
+
+  .imageSection img {
+    width: 80%; /* Scale image to fit within screen width */
+    max-width: 300px; /* Limit max size for smaller devices */
+    height: auto;
+  }
+}

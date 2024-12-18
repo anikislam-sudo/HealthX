@@ -1,0 +1,152 @@
+.footer {
+  background-color: #0F192B;
+  color: white;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.footerCompany {
+  width: 25%;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.logoText {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.companyInfo {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.socialIcon {
+  color: #a0aec0;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  transition: color 0.3s;
+}
+
+.socialIcon:hover {
+  color: white;
+}
+
+.footerLinks {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linksColumn {
+  width: 33.33%;
+}
+
+.linksTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.linksList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  font-size: 0.875rem;
+  color: #a0aec0;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: white;
+}
+
+.footerBottom {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.copyright {
+  color: #a0aec0;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerCompany {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .logoContainer {
+    justify-content: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+
+  .footerLinks {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linksColumn {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .linksTitle {
+    font-size: 1rem;
+  }
+
+  .linksList {
+    padding: 0;
+  }
+
+  .link {
+    font-size: 0.875rem;
+  }
+
+  .footerBottom {
+    font-size: 0.75rem;
+  }
+}

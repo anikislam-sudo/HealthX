@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  justify-content: space-evenly; /* Space between logo and nav */
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004990;
+}
+
+.nav {
+  flex: 1; /* Makes the nav container take available space */
+}
+
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 100px;
+  padding: 0px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.navItem {
+  text-align: center;
+}
+
+.navLink {
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none; /* Removes underline */
+}
+
+.navItem a {
+  text-decoration: none; /* Ensures links don't show underline */
+}
+
+.navLink:hover {
+  color: #007bff;
+}
+
+.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.servicesBtn {
+  background: linear-gradient(180deg, #014990 37.5%, #daedff 100%);
+  color: #fff;
+  border-radius: 30px;
+  border: 2px;
+}
+
+.heroButtons a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburgerMenu span {
+  height: 3px;
+  width: 25px;
+  background-color: #004990;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.mobileCloseIcon {
+  display: none; /* Hide by default */
+}
+
+.nav.mobileNavOpen .mobileCloseIcon {
+  display: block; /* Show only when menu is open */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #004990;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .header{
+    padding:1rem;
+  }
+  .hamburgerMenu {
+    display: flex;
+    margin-left: 130px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 100;
+    color: black;
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .navItem {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .nav.mobileNavOpen {
+    right: 0;
+  }
+  .closeIcon{
+   max-width: 100%;
+ 
+  }
+}

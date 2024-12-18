@@ -1,0 +1,192 @@
+.container {
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #6b6b6b;
+  margin-bottom: 30px;
+}
+
+.headerHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px;
+}
+.headerHeroPara {
+
+  color: #1bb4fb;
+}
+.heroImage1 {
+  width: 28px;
+  height: 25px;
+  margin-left:-15px
+}
+.formContainer {
+  display: flex;
+  align-items: center; /* Aligns image and form vertically */
+  justify-content: space-between; /* Adds space between image and form */
+  flex-wrap: nowrap; /* Prevents wrapping to the next line */
+  gap: 20px;
+}
+
+.imageContainer {
+  flex: 1; /* Allocates space for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctorImage {
+  max-width: 500px;
+  height: auto;
+ 
+}
+
+.form {
+  flex: 1.5; /* Allocates more space for the form */
+  padding: 20px;
+  background: white;
+  border: 2px solid #195B9C;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.formGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.phoneInput {
+  display: flex;
+  gap: 10px;
+}
+
+.phoneInput .select {
+  width: 20%;
+}
+
+.submitButton {
+  display: flex; /* Enables flexbox for the button */
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button content vertically */
+  background: linear-gradient(180deg, #014990 37.5%, #daedff 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Adjust padding for better appearance */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px auto; /* Centers the button within its container */
+  text-align: center;
+}
+.submitButton:hover {
+  background: linear-gradient(to right, #0056b3, #003d80);
+}
+
+/* Media Query for Smaller Screens */
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column; /* Stacks image and form vertically */
+  }
+
+  .form,
+  .imageContainer {
+    width: 100%; /* Full width for both elements on small screens */
+  }
+
+  .row {
+    flex-direction: column; /* Stacks input fields vertically */
+    gap: 10px; /* Reduces gap between inputs */
+  }
+
+  .submitButton {
+    width: 100%; /* Full width button on mobile */
+    margin: 10px 0; /* Adjust margin for mobile */
+    padding: 14px 16px; /* Adjust padding for mobile screens */
+  }
+
+  .doctorImage {
+    max-width: 100%; /* Ensure the image resizes to fit on mobile */
+    height: auto;
+  }
+
+  .title {
+    font-size: 24px; /* Slightly smaller font size for title */
+  }
+
+  .subtitle {
+    font-size: 13px; /* Adjusted font size for better readability on mobile */
+  }
+
+  .headerHero {
+    padding: 12px; /* Reduce padding for mobile */
+  }
+
+  .headerHeroPara {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .heroImage1 {
+    width: 24px;
+    height: 22px;
+  }
+
+  .input,
+  .textarea,
+  .select {
+    padding: 8px 12px; /* Adjust padding for inputs on mobile */
+  }
+
+  .phoneInput .select {
+    width: 25%; /* Increase width of select on mobile for better visibility */
+  }
+}

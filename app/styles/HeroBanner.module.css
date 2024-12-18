@@ -1,0 +1,202 @@
+.heroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 100px;
+  background: linear-gradient(
+    81deg,
+    rgba(241, 250, 255, 0.7) 9.01%,
+    rgba(232, 241, 255, 0.329) 89.11%
+  );
+  position: relative;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 50%;
+ height: 60vh;
+
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.heroContent h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.heroContent p {
+  font-size: 18px;
+  color: #0077b6;
+  margin-bottom: 30px;
+}
+.headerHero {
+  display: flex;
+  gap: 4px;
+}
+.headerHeroPara {
+  color: #1bb4fb;
+}
+.heroImage1 {
+  width: 28px;
+  height: 25px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.heroButtons a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discoverMoreBtn {
+  background: linear-gradient(180deg, #00a4f4 37.5%, #d9f3ff 100%);
+  color: #fff;
+}
+
+.servicesBtn {
+  background: linear-gradient(180deg, #014990 37.5%, #daedff 100%);
+  color: #fff;
+}
+
+.heroImage {
+  flex: 1;
+  text-align: right;
+}
+
+.heroImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.searchContainer {
+  position: absolute;
+  bottom:90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.searchContainer input {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.searchBtn {
+  background: linear-gradient(180deg, #014990 37.5%, #daedff 100%);
+  color: #fff;
+
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 85px; /* Reduced spacing for a balanced look */
+    margin-top: 5px; /* Adjusted for better top spacing */
+  }
+
+  .headerHero {
+    padding-left: 100px; /* Align to center for better mobile experience */
+    text-align: center;
+    gap: 6px; /* Adjust gap for tighter alignment */
+  }
+
+  .heroContent {
+    max-width: 100%;
+    text-align: center; /* Center-align text for mobile */
+    height: auto; /* Allow content to flow */
+    margin-bottom: 180px; /* Added proper spacing below */
+  }
+
+  .heroContent h1 {
+    font-size: 32px; /* Adjusted for readability */
+  }
+
+  .heroContent h2 {
+    font-size: 24px; /* Scaled for smaller screens */
+  }
+
+  .heroContent p {
+    font-size: 14px; /* Smaller text for compact design */
+    margin-bottom: 20px; /* Adjust spacing for balance */
+  }
+
+  .heroImage {
+    text-align: center; /* Center-align image on mobile */
+   max-width: fit-content;
+    margin-left: 50px;
+  }
+
+  .heroImage img {
+    max-width: fit-content;
+    height: auto; /* Maintain image aspect ratio */
+  }
+
+  .searchContainer {
+    flex-direction: column; /* Stack elements vertically */
+    width: 90%; /* Slight margin for breathing space */
+    padding: 20px; /* Maintain spacing */
+    bottom: -80px; /* Closer to the bottom */
+    gap: 15px; /* Reduce gap for compact layout */
+    align-items: stretch; /* Ensure consistent width alignment */
+  }
+
+  .searchContainer input {
+    width: 100%; /* Take full width */
+    font-size: 14px;
+    padding: 12px; /* Slightly increased padding */
+  }
+
+  .searchBtn {
+    width: 100%; /* Full-width button */
+    font-size: 14px;
+    padding: 12px 20px; /* Adjust for visual balance */
+  }
+
+  .heroButtons {
+    flex-direction: column; /* Stack buttons */
+    gap: 15px; /* Uniform spacing */
+    margin-top: 20px; /* Add spacing above */
+    width: 100%; /* Adjust buttons for full width */
+  }
+
+  .heroButtons a {
+    width: 100%; /* Full-width for mobile */
+    text-align: center;
+    padding: 10px 20px; /* Uniform button padding */
+  }
+}
