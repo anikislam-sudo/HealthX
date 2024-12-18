@@ -109,8 +109,8 @@
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-  .header{
-    padding:1rem;
+  .header {
+    padding: 1rem;
   }
   .hamburgerMenu {
     display: flex;
@@ -122,7 +122,7 @@
     top: 0;
     right: -100%;
     width: 100%;
-    height: 45vh;
+    height: 65vh;
     background-color: white;
     flex-direction: column;
     justify-content: center;
@@ -148,8 +148,7 @@
   .nav.mobileNavOpen {
     right: 0;
   }
-  .closeIcon{
-   max-width: 100%;
- 
+  .closeIcon {
+    max-width: 100%;
   }
 }
