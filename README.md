@@ -1,3 +1,8 @@
+
+Note: My mobile device is fully responsive. If you view my live project on a mobile device, please refresh the page to ensure it displays responsively.
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
